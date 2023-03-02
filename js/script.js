@@ -4,7 +4,6 @@ const userData = async (username) => {
     const url = `https://api.github.com/users/${username}`
     const response = await fetch(url);
     const userInfo = await response.json();
-    console.log(userInfo)
     const dateOption = {
         year: "numeric",
         month: "long",
